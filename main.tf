@@ -20,4 +20,5 @@ resource "docker_image" "ubuntu" {
 resource "docker_container" "foo" {
   image = docker_image.ubuntu.latest
   name  = "foo"
+
 }
